@@ -50,7 +50,7 @@ module MCollective
               type = request[:type]
               name = request[:name]
 
-              reply[:result] = Puppet::Resource.find([type, name].join('/')
+              reply[:result] = Puppet::Resource.find([type, name].join('/'))
             end
         end
     end
